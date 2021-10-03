@@ -56,22 +56,22 @@ $ pip install questionary
 An sample block codes are shown below:
 The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. An sample block code of fire usage is shown below:
 
-def run():
-    """The main function for running the script."""
-    # Load the latest Bank data
-    bank_data = load_bank_data()
+  def run():
+      """The main function for running the script."""
+      # Load the latest Bank data
+      bank_data = load_bank_data()
 
-    # Get the applicant's information
-    credit_score, debt, income, loan_amount, home_value = get_applicant_info()
+      # Get the applicant's information
+      credit_score, debt, income, loan_amount, home_value = get_applicant_info()
 
-    # Find qualifying loans
-    qualifying_loans = find_qualifying_loans(bank_data, credit_score, debt, income, loan_amount, home_value)
+      # Find qualifying loans
+      qualifying_loans = find_qualifying_loans(bank_data, credit_score, debt, income, loan_amount, home_value)
 
-    # Save qualifying loans
-    save_qualifying_loans(qualifying_loans)
+      # Save qualifying loans
+      save_qualifying_loans(qualifying_loans)
 
-    if __name__ == "__main__":
-      fire.Fire(run)
+      if __name__ == "__main__":
+        fire.Fire(run)
 
 An sample of questionary usage block code are shown below:
 
