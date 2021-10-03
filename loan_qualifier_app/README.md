@@ -82,8 +82,7 @@ if __name__ == "__main__":
 An sample screenshot of questionary usage and the block code are shown below:
 
 Screenshots:
-![](loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png)
-
+![questionary code screenshot](loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png)
 
 Code blocks:
 import questionary
