@@ -3,6 +3,7 @@
 This is a python command-line interface application that allows users to see qualifying loans from lenders quickly and easily. The application works by taking in a `daily_rate_sheet` of loan criteria from various loan providers, asking the user a number of questions to evaluate their loan eligibility, and then returning to them a list of qualifying loans.
 
 An application developer at fintech lending startup, was tasked with adding a new high priority feature that can prompt the user to save the qualifying loans as a new CSV file.  This project is an excellent way for the developer to demonstrate his skills in his new fintech career.
+
 The main contribution or user story for the project is as follows:
 
 Role: Biz operation
@@ -20,8 +21,8 @@ The programming language used for this project is Python 3.9. In addition, the f
 3. pathlib
 4. csv library 
 frameworks
-Windows 10 operating was used in executing the python coding.  
-The command line interface application used is git bash and VS code which has a built in CLI.
+Windows 10 operating system used in executing the python coding.  
+git bash and VS code which has a built in CLI and libraries are used for the project.
 
 This project leverages python 3.9 with the following packages:
 
@@ -39,43 +40,73 @@ Before running the application first install the following dependencies.
   pip install fire
   pip install questionary
 ```
-### Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. This can be installed using one of the following ways:
-1. To install Python Fire with pip, run: pip install fire
-2. To install Python Fire with conda, run: conda install fire -c conda-forge
-3. To install Python Fire from source, first clone the repository and then run: python setup.py install
+How To Install Python 3 on Windows 10
+Step 1: Select Version of Python to Install.
+Step 2: Download Python Executable Installer.
+Step 3: Run Executable Installer.
+Step 4: Verify Python Was Installed On Windows.
+Step 5: Verify Pip Was Installed.
+Step 6: Add Python Path to Environment Variables (Optional)
 
+pip fire installation
+Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. This can be installed in one of the following ways:
+To install Python Fire from pypi, run:
+pip install fire
+Alternatively, to install Python Fire from source, clone the source and run:
+python setup.py install
 
-
-
-
-include detailed installation notes 
-containing:
-code blocks
-screenshots.
+pip questionary installation
+Use the package manager pip to install Questionary:
+$ pip install questionary
 
 ---
 
 ## Usage
+An sample screenshot of the usage and the block code are shown below:
+The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. An sample block code of fire usage is shown below:
 
-This section should include
- screenshots, 
- code blocks, 
- or animations explaining how to use your project.
+import fire
+
+def hello(name):
+  return 'Hello {name}!'.format(name=name)
+
+if __name__ == '__main__':
+  fire.Fire()
+
+An sample screenshot of questionary usage and the block code are shown below:
+
+Screenshots:
+![](images/questionary screenshot.png))
+
+Code blocks:
+import questionary
+
+ ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
+    # user to write in the file path
+ans_savefile = questionary.confirm("Do you want to save this file?").ask()
+    if ans_savefile == True: 
+        save_csv(qualifying_loans) 
 
 ---
 
 ## Contributors
+I wish to acknowledge the following contributors to the success of this project:
+  Camden Kirkland - Lead instrucor Rice University Fintech Bootcamp
+  Jonathan Randolph - TA  Rice University Fintech Bootcamp
+  Kenneth Igben - TA  Rice University Fintech Bootcamp
+  Caleb MacBride - TA  Rice University Fintech Bootcamp
+My contact email is egeorge2013khs@gamil.com 
 
-In this section, 
-list all the people who contribute to this project. 
-You might want recruiters or potential collaborators to reach you, 
-so include your contact email and, 
-optionally, your LinkedIn or Twitter profile.
+My LinkedIn profile: www.linkedin.com/in/emmanuel-george-mba-pmp-pcqi
+
+
+References:
+https://github.com/google/python-fire
+https://www.google.com/search?q=how+to+install+python+on+windows+10&rlz=1C1JZAP_enUS900US901&oq=how+to+install+python&aqs=chrome.2.69i57j0i20i263i512j0i512l8.20367j0j15&sourceid=chrome&ie=UTF-8
+https://pypi.org/project/questionary/
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, 
-it's important to choose the right license to specify what others can and can't with your source code and files. 
-Use this section to include the license you want to use.
+MIT
