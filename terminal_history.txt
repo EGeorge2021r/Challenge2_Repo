@@ -1,0 +1,50 @@
+  114  ~
+  115  pwd
+  116  cd one
+  117  exit
+  118  cd OneDrive
+  119  cd Desktop
+  120  cd Fintech/
+  121  cd Challenge2_Repo/
+  122  code .
+  123  python loan_qualifier_app/
+  124  ls
+  125  cd loan_qualifier_app/
+  126  ls
+  127  python app.py 
+  128  git push origin main
+  129  git status
+  130  git add -a
+  131  git add .
+  132  git add -A
+  133  git commit -m "file update Oct 2"
+  134  git push
+  135  git push origin main
+  136  git add -A
+  137  git commit -m "further updates made in Read me file"
+  138  git push origin main
+  139  git add -A
+  140  git commit -m "additional update of immage files format"
+  141  git push origin main
+  142  git add -A
+  143  git commit -m "further editing of image file"
+  144  git push origin main
+  145  git pull origin main
+  146  git pull origin main
+  147  git status
+  148  git commit -a "conflict fixed"
+  149  git commit -m "conflict resolved"
+  150  git add -A
+  151  git commit -m "conflict resolved"
+  152  git push
+  153  git push origin main
+  154  git pull origin main
+  155  git pull origin main
+  156  git status
+  157  git add -A
+  158  git commit -m "conflict resolution"
+  159  git pull origin main
+  160  cd .
+  161  cd ..
+  162  history 50 > terminal_history.txt
+  163  history 50 > terminal_history.txt
