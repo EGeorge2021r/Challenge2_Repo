@@ -15,7 +15,7 @@ Reason: To demonstrate the new software engineers’ skills in fintech career
 ---
 
 ## Technologies
-The programming language used for this project is Python 3.9. In addition, the following python libraries were imported and used in the coding:
+The programming language used for this project is Python 3.9. In addition, the following libraries were imported and used in the coding:
 1. Fire
 2. Questionary
 3. pathlib
@@ -41,12 +41,8 @@ Before running the application first install the following dependencies.
   pip install questionary
 ```
 How To Install Python 3 on Windows 10
-Step 1: Select Version of Python to Install.
-Step 2: Download Python Executable Installer.
-Step 3: Run Executable Installer.
-Step 4: Verify Python Was Installed On Windows.
-Step 5: Verify Pip Was Installed.
-Step 6: Add Python Path to Environment Variables (Optional)
+Step 1: Select Version of Python to Install, Step 2: Download Python Executable Installer, Step 3: Run Executable Installer, Step 4: Verify Python Was Installed On Windows.
+Step 5: Verify Pip Was Installed, Step 6: Add Python Path to Environment Variables (Optional)
 
 pip fire installation
 Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. This can be installed in one of the following ways:
@@ -62,21 +58,31 @@ $ pip install questionary
 ---
 
 ## Usage
-An sample screenshot of the usage and the block code are shown below:
+An sample block codes are shown below:
 The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. An sample block code of fire usage is shown below:
 
-import fire
+def run():
+    """The main function for running the script."""
 
-def hello(name):
-  return 'Hello {name}!'.format(name=name)
+    # Load the latest Bank data
+    bank_data = load_bank_data()
 
-if __name__ == '__main__':
-  fire.Fire()
+    # Get the applicant's information
+    credit_score, debt, income, loan_amount, home_value = get_applicant_info()
+
+    # Find qualifying loans
+    qualifying_loans = find_qualifying_loans(bank_data, credit_score, debt, income, loan_amount, home_value)
+
+    # Save qualifying loans
+    save_qualifying_loans(qualifying_loans)
+
+if __name__ == "__main__":
+     fire.Fire(run)
 
 An sample screenshot of questionary usage and the block code are shown below:
 
 Screenshots:
-![](images/questionary_screenshot.png)
+![](loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png)
 
 
 Code blocks:

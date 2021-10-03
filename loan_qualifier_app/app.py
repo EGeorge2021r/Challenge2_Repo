@@ -35,7 +35,7 @@ def load_bank_data():
     """
 # questionary is programmed to ask  the user for the file path to a rate sheet in csv module
     csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
-# an argument or function created to return csv path if user input  is validated as true or exit with comments   
+# an argument or function created to return csv path if user input is validated as true or exit with comments   
     csvpath = Path(csvpath)
     if not csvpath.exists():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
