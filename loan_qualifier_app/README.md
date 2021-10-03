@@ -16,12 +16,8 @@ Reason: To demonstrate the new software engineers’ skills in fintech career
 
 ## Technologies
 The programming language used for this project is Python 3.9. In addition, the following libraries were imported and used in the coding:
-1. Fire
-2. Questionary
-3. pathlib
-4. csv library 
-frameworks
-Windows 10 operating system used in executing the python coding.  
+1. Fire, 2. Questionary, 3. pathlib, 4. csv library
+operating system used in executing the python coding is Windows 10.  
 git bash and VS code which has a built in CLI and libraries are used for the project.
 
 This project leverages python 3.9 with the following packages:
@@ -44,7 +40,6 @@ How To Install Python 3 on Windows 10
 Step 1: Select Version of Python to Install, Step 2: Download Python Executable Installer, Step 3: Run Executable Installer, Step 4: Verify Python Was Installed On Windows.
 Step 5: Verify Pip Was Installed, Step 6: Add Python Path to Environment Variables (Optional)
 
-pip fire installation
 Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. This can be installed in one of the following ways:
 To install Python Fire from pypi, run:
 pip install fire
@@ -63,7 +58,6 @@ The easiest way to use Fire is to take any Python program, and then simply call 
 
 def run():
     """The main function for running the script."""
-
     # Load the latest Bank data
     bank_data = load_bank_data()
 
@@ -79,7 +73,7 @@ def run():
 if __name__ == "__main__":
      fire.Fire(run)
 
-An sample screenshot of questionary usage and the block code are shown below:
+An sample of questionary usage block code are shown below:
 
 Screenshots:
 <img src="loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png">
@@ -87,12 +81,14 @@ Screenshots:
 Code blocks:
 import questionary
 
- ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
-    # user to write in the file path
+    # this is where the file is saved, using questionary, the user is asked to enter the path 
+ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
+
 ans_savefile = questionary.confirm("Do you want to save this file?").ask()
     if ans_savefile == True: 
         save_csv(qualifying_loans) 
-        
+      # if the answer by the user is yes, then the user will be promped to enter the file path to save the result.
+      
 ---
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
@@ -103,7 +99,6 @@ I wish to acknowledge the following contributors to the success of this project:
 My contact email is egeorge2013khs@gamil.com 
 
 My LinkedIn profile: www.linkedin.com/in/emmanuel-george-mba-pmp-pcqi
-
 
 References:
 https://github.com/google/python-fire
