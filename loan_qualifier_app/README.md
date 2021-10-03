@@ -16,12 +16,8 @@ Reason: To demonstrate the new software engineers’ skills in fintech career
 
 ## Technologies
 The programming language used for this project is Python 3.9. In addition, the following libraries were imported and used in the coding:
-<<<<<<< HEAD
-1. Fire, 2. Questionary, 3. pathlib, 4. csv library frameworks
-=======
-1. Fire, 2. Questionary, 3. pathlib, 4. csv library
->>>>>>> aa9bd38834f59d451f3b92fbfc7e33d51e935bf8
-operating system used in executing the python coding is Windows 10.  
+1. Fire, 2. Questionary, 3. pathlib, 4. csv library 
+Windows 10operating system used in executing the python coding.  
 git bash and VS code which has a built in CLI and libraries are used for the project.
 
 This project leverages python 3.9 with the following packages:
@@ -80,7 +76,7 @@ if __name__ == "__main__":
 An sample of questionary usage block code are shown below:
 
 Screenshots:
-<img src="loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png">
+<img src="C:\Users\egeor\OneDrive\Desktop\Fintech\Challenge2_Repo\loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png">
 
 Code blocks:
 import questionary
