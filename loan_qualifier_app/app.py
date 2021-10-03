@@ -108,7 +108,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 # the qualifying loans file is now saved in csv 
 def save_csv(qualifying_loans):
-    # this is where the file is saved, using questionary, the user is asked to enter the path 
+    # using questionary, the user is asked to enter the file path where the file will be saved.  
     ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
     #print(qualifying_loans)
 
