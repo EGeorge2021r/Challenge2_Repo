@@ -76,7 +76,7 @@ if __name__ == '__main__':
 An sample screenshot of questionary usage and the block code are shown below:
 
 Screenshots:
-![](images/questionary screenshot.png))
+![](images/questionary_screenshot.png)
 
 Code blocks:
 import questionary
