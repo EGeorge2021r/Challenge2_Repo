@@ -70,7 +70,7 @@ The easiest way to use Fire is to take any Python program, and then simply call 
       # Save qualifying loans
       save_qualifying_loans(qualifying_loans)
 
-      if __name__ == "__main__":
+  if __name__ == "__main__":
         fire.Fire(run)
 
 An sample of questionary usage block code are shown below:
