@@ -82,7 +82,7 @@ if __name__ == "__main__":
 An sample screenshot of questionary usage and the block code are shown below:
 
 Screenshots:
-![questionary code screenshot](loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png)
+![](loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png)
 
 Code blocks:
 import questionary
@@ -92,9 +92,7 @@ import questionary
 ans_savefile = questionary.confirm("Do you want to save this file?").ask()
     if ans_savefile == True: 
         save_csv(qualifying_loans) 
-
 ---
-
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
   Camden Kirkland - Lead instrucor Rice University Fintech Bootcamp
