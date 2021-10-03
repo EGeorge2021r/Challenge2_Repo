@@ -16,7 +16,11 @@ Reason: To demonstrate the new software engineers’ skills in fintech career
 
 ## Technologies
 The programming language used for this project is Python 3.9. In addition, the following libraries were imported and used in the coding:
+<<<<<<< HEAD
 1. Fire, 2. Questionary, 3. pathlib, 4. csv library frameworks
+=======
+1. Fire, 2. Questionary, 3. pathlib, 4. csv library
+>>>>>>> aa9bd38834f59d451f3b92fbfc7e33d51e935bf8
 operating system used in executing the python coding is Windows 10.  
 git bash and VS code which has a built in CLI and libraries are used for the project.
 
@@ -87,8 +91,8 @@ ans_path = questionary.path("What file path do you want to save qualifying loans
 ans_savefile = questionary.confirm("Do you want to save this file?").ask()
     if ans_savefile == True: 
         save_csv(qualifying_loans) 
-    # if the answer by the user is yes, then the user will be promped to enter the file path to save the result.
-        
+      # if the answer by the user is yes, then the user will be promped to enter the file path to save the result.
+      
 ---
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
