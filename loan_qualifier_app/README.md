@@ -58,7 +58,6 @@ The easiest way to use Fire is to take any Python program, and then simply call 
 
 def run():
     """The main function for running the script."""
-
     # Load the latest Bank data
     bank_data = load_bank_data()
 
@@ -76,6 +75,9 @@ if __name__ == "__main__":
 
 An sample of questionary usage block code are shown below:
 
+Screenshots:
+<img src="loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png">
+
 Code blocks:
 import questionary
 
@@ -86,8 +88,8 @@ ans_savefile = questionary.confirm("Do you want to save this file?").ask()
     if ans_savefile == True: 
         save_csv(qualifying_loans) 
     # if the answer by the user is yes, then the user will be promped to enter the file path to save the result.
+        
 ---
-
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
   Camden Kirkland - Lead instrucor Rice University Fintech Bootcamp
@@ -97,7 +99,6 @@ I wish to acknowledge the following contributors to the success of this project:
 My contact email is egeorge2013khs@gamil.com 
 
 My LinkedIn profile: www.linkedin.com/in/emmanuel-george-mba-pmp-pcqi
-
 
 References:
 https://github.com/google/python-fire
