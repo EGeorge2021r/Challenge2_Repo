@@ -70,8 +70,8 @@ def run():
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
 
-if __name__ == "__main__":
-     fire.Fire(run)
+    if __name__ == "__main__":
+      fire.Fire(run)
 
 An sample of questionary usage block code are shown below:
 
@@ -90,6 +90,7 @@ def save_qualifying_loans(qualifying_loans):
          
     # if the answer by the user is yes, then the user will be promped to enter the file path and csv file to save the result.
         save_csv(qualifying_loans)
+        
 ---
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
