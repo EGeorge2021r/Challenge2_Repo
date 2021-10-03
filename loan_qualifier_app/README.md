@@ -54,7 +54,9 @@ $ pip install questionary
 
 ## Usage
 An sample block codes are shown below:
-The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. An sample block code of fire usage is shown below:
+The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. 
+
+An sample block code of fire usage is shown below:
 
       def run():
       """The main function for running the script."""
@@ -75,11 +77,9 @@ The easiest way to use Fire is to take any Python program, and then simply call 
 
 An sample of questionary usage block code are shown below:
 
-Screenshots:
-<img src="C:\Users\egeor\OneDrive\Desktop\Fintech\Challenge2_Repo\loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png">
-
 Code blocks:
-import questionary
+
+    import questionary
 
     def save_qualifying_loans(qualifying_loans):
     
