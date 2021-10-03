@@ -1,29 +1,3 @@
-  121  cd Challenge2_Repo/
-  122  code .
-  123  python loan_qualifier_app/
-  124  ls
-  125  cd loan_qualifier_app/
-  126  ls
-  127  python app.py 
-  128  git push origin main
-  129  git status
-  130  git add -a
-  131  git add .
-  132  git add -A
-  133  git commit -m "file update Oct 2"
-  134  git push
-  135  git push origin main
-  136  git add -A
-  137  git commit -m "further updates made in Read me file"
-  138  git push origin main
-  139  git add -A
-  140  git commit -m "additional update of immage files format"
-  141  git push origin main
-  142  git add -A
-  143  git commit -m "further editing of image file"
-  144  git push origin main
-  145  git pull origin main
-  146  git pull origin main
   147  git status
   148  git commit -a "conflict fixed"
   149  git commit -m "conflict resolved"
@@ -48,3 +22,29 @@
   168  history 50 > terminal_history.txt
   169  history
   170  history 50 >terminal_history.txt
+  171   git status
+  172  git add -A
+  173  git commit -m "image files clean up"
+  174  git push origin main
+  175  git add -A
+  176  git commit -m "Image file updates"
+  177  git push origin main
+  178  git add -A
+  179  git commit -m "further updates on READ ME file"
+  180  git push origin main
+  181  git pull origin main
+  182  git pull origin main
+  183  git add -A
+  184  git commit -m "further updates to resolve conflicts"
+  185  git push
+  186  git pull origin main
+  187  git pull
+  188  git add -A
+  189  git commit -m "updates to resolve conflict"
+  190  git pull origin main
+  191  git status
+  192  git push origin main
+  193  git add -A
+  194  git commit -m "READ ME updates"
+  195  git push origin main
+  196  history 50 >terminal_history.txt

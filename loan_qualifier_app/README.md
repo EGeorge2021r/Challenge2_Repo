@@ -81,14 +81,15 @@ Screenshots:
 Code blocks:
 import questionary
 
-    # this is where the file is saved, using questionary, the user is asked to enter the path 
-ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
+def save_qualifying_loans(qualifying_loans):
+    # using questionary, the user is asked to enter the file path where the file will be saved.
+    ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
 
-ans_savefile = questionary.confirm("Do you want to save this file?").ask()
+    ans_savefile = questionary.confirm("Do you want to save this file?").ask()
     if ans_savefile == True: 
-        save_csv(qualifying_loans) 
-      # if the answer by the user is yes, then the user will be promped to enter the file path to save the result.
-      
+         
+    # if the answer by the user is yes, then the user will be promped to enter the file path and csv file to save the result.
+        save_csv(qualifying_loans)
 ---
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
