@@ -1,30 +1,57 @@
-# Project Title
+# Loan Qualifier Application
 
-Just after the title, 
-introduce your project 
-by describing attractively what the project is about 
-and what is the main problem that inspires you to create this project 
-or what is the main contribution for the potential user of your project.
+This is a python command-line interface application that allows users to see qualifying loans from lenders quickly and easily. The application works by taking in a `daily_rate_sheet` of loan criteria from various loan providers, asking the user a number of questions to evaluate their loan eligibility, and then returning to them a list of qualifying loans.
+
+An application developer at fintech lending startup, was tasked with adding a new high priority feature that can prompt the user to save the qualifying loans as a new CSV file.  This project is an excellent way for the developer to demonstrate his skills in his new fintech career.
+The main contribution or user story for the project is as follows:
+
+Role: Biz operation
+
+Goal: Create an enhancement in the software that will prompt the user to save the qualifying loan as a new CSV file.
+
+Reason: To demonstrate the new software engineers’ skills in fintech career
 
 ---
 
 ## Technologies
-programming languages
-libraries, 
+The programming language used for this project is Python 3.9. In addition, the following python libraries were imported and used in the coding:
+1. Fire
+2. Questionary
+3. pathlib
+4. csv library 
 frameworks
-operating systems. 
-include the specific versions of any critical dependencies that you have used in the stable version of your project.
+Windows 10 operating was used in executing the python coding.  
+The command line interface application used is git bash and VS code which has a built in CLI.
 
+This project leverages python 3.9 with the following packages:
 
-#Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+* [fire](https://github.com/google/python-fire) - For the command line interface, help page, and entrypoint.
+
+* [questionary](https://github.com/tmbo/questionary) - For interactive user prompts and dialogs
+
+For project visibilty and information sharing a repository was created in GitHub for tthis project named Challenge2_Repo.
 
 ---
 
 ## Installation Guide
+Before running the application first install the following dependencies.
+```python
+  pip install fire
+  pip install questionary
+```
+### Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. This can be installed using one of the following ways:
+1. To install Python Fire with pip, run: pip install fire
+2. To install Python Fire with conda, run: conda install fire -c conda-forge
+3. To install Python Fire from source, first clone the repository and then run: python setup.py install
 
-In this section, you should include 
-detailed installation notes 
-containing code blocks and screenshots.
+
+
+
+
+include detailed installation notes 
+containing:
+code blocks
+screenshots.
 
 ---
 
