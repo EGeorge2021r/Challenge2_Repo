@@ -4,7 +4,7 @@ This is a python command-line interface application that allows users to see qua
 
 An application developer at fintech lending startup, was tasked with adding a new high priority feature that can prompt the user to save the qualifying loans as a new CSV file.  This project is an excellent way for the developer to demonstrate his skills in his new fintech career.
 
-The main contribution or user story for the project is as follows:
+The user story for the project is as follows:
 
 Role: Biz operation
 
@@ -16,9 +16,10 @@ Reason: To demonstrate the new software engineers’ skills in fintech career
 
 ## Technologies
 The programming language used for this project is Python 3.9. In addition, the following libraries were imported and used in the coding:
-1. Fire, 2. Questionary, 3. pathlib, 4. csv library 
-Windows 10operating system used in executing the python coding.  
-git bash and VS code which has a built in CLI and libraries are used for the project.
+1. Fire, 2. Questionary, 3. pathlib, 4. csv library
+
+Windows 10 operating system was used in executing the python coding.  
+git bash and VS code whit a built in CLI and libraries were other technologies used to execute the project.
 
 This project leverages python 3.9 with the following packages:
 
@@ -37,12 +38,17 @@ Before running the application first install the following dependencies.
   pip install questionary
 ```
 How To Install Python 3 on Windows 10
+
 Step 1: Select Version of Python to Install, Step 2: Download Python Executable Installer, Step 3: Run Executable Installer, Step 4: Verify Python Was Installed On Windows.
 Step 5: Verify Pip Was Installed, Step 6: Add Python Path to Environment Variables (Optional)
 
-Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. This can be installed in one of the following ways:
+Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. 
+
+This can be installed in one of the following ways:
+
 To install Python Fire from pypi, run:
 pip install fire
+
 Alternatively, to install Python Fire from source, clone the source and run:
 python setup.py install
 
@@ -59,15 +65,14 @@ The screen shot below shows the imports and critical dependencies that are used 
 ---
 
 ## Usage
-An sample block codes are shown below:
-The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. 
+The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. An sample screen shot is shown below:
 
 Upon launching the loan qualifier, the user will be prompted to answer the following:
 
 ![Loan Qualifier Prompts](Images/Questionary_for_Applicants_bank_info.png)
 
 
-The git terminal will display the dialog with the applicant will as follows:
+The git terminal will display the dialog and the applicants input as follows:
 
 ![Loan Qualifier Prompts](Images/git_terminal_user_dialog.png)
 
