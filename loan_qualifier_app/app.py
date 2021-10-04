@@ -11,38 +11,39 @@ import sys
 import fire
 # inport questionary installed properly
 import questionary
+# The pathlib is a standard Python module which provides an object application programming interface API for working with files and directories.  
 from pathlib import Path
 #csv library added to list of import  
 import csv
+# the qualifier.utils.fileio module allows the import of the calculated monthly debt ratio and the loan to value ratio 
 from qualifier.utils.fileio import load_csv
-
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
 )
-
+# the qualifier module allows the loans to be filtered based on the four loan criteria below
 from qualifier.filters.max_loan_size import filter_max_loan_size
 from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
-
+# The filtered banking data is now to be loaded in the data rate sheet csv file
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
 
     Returns:
         The bank data from the data rate sheet CSV file.
     """
-# questionary is programmed to ask  the user for the file path to a rate sheet in csv module
+# questionary will now ask the user for the file path to a rate sheet in csv module
     csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
-# an argument or function created to return csv path if user input is validated as true or exit with comments   
+# an argument or function is created to return csv path if user input is validated as true or exit with comments   
     csvpath = Path(csvpath)
     if not csvpath.exists():
         sys.exit(f"Oops! Can't find this path: {csvpath}")
 
     return load_csv(csvpath)
 
-# using questionary the user is prompted to input the applicants fainancial information
+# Once the bank data is loaded on the rate sheet and the path validated as true, the dialog now prompts the applicant to enter the apllicants financial information below lines 54 -58
 def get_applicant_info():
     """Prompt dialog to get the applicant's financial information.
 
@@ -58,10 +59,11 @@ def get_applicant_info():
 
 # the data types are declared below 
     credit_score = int(credit_score)
-    debt = float(debt)
+    debt = float(debt) 
     income = float(income)
     loan_amount = float(loan_amount)
     home_value = float(home_value)
+
 # the applicants financial information is returned, showing credit_score, debt, income, loan_amount, home_value
     return credit_score, debt, income, loan_amount, home_value
 
@@ -134,7 +136,7 @@ def save_qualifying_loans(qualifying_loans):
     ans_savefile = questionary.confirm("Do you want to save this file?").ask()
 
     if ans_savefile == True:
-        # if the answer by the user is yes, then the user will be promped to enter the file path to save the result. 
+        # if the answer by the user is yes, then the user will be prompted to enter the file path to save the result. 
         save_csv(qualifying_loans) 
 
 

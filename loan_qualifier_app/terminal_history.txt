@@ -1,50 +1,50 @@
-  147  git status
-  148  git commit -a "conflict fixed"
-  149  git commit -m "conflict resolved"
-  150  git add -A
-  151  git commit -m "conflict resolved"
-  152  git push
-  153  git push origin main
-  154  git pull origin main
-  155  git pull origin main
-  156  git status
-  157  git add -A
-  158  git commit -m "conflict resolution"
-  159  git pull origin main
-  160  cd .
-  161  cd ..
-  162  history 50 > terminal_history.txt
-  163  history 50 > terminal_history.txt
-  164  cd loan_qualifier_app/
-  165  ls
-  166  python app.py
-  167  python app.py
-  168  history 50 > terminal_history.txt
-  169  history
-  170  history 50 >terminal_history.txt
-  171   git status
-  172  git add -A
-  173  git commit -m "image files clean up"
-  174  git push origin main
-  175  git add -A
-  176  git commit -m "Image file updates"
-  177  git push origin main
-  178  git add -A
-  179  git commit -m "further updates on READ ME file"
-  180  git push origin main
-  181  git pull origin main
-  182  git pull origin main
-  183  git add -A
-  184  git commit -m "further updates to resolve conflicts"
-  185  git push
-  186  git pull origin main
-  187  git pull
-  188  git add -A
-  189  git commit -m "updates to resolve conflict"
-  190  git pull origin main
   191  git status
   192  git push origin main
   193  git add -A
   194  git commit -m "READ ME updates"
   195  git push origin main
   196  history 50 >terminal_history.txt
+  197  git add -A
+  198  git commit -m "More READ ME update"
+  199  git push origin main
+  200  git add -A
+  201  git commit -m "More READ ME update"
+  202  git push origin main
+  203  git add -A
+  204  git commit -m " update made on READ ME file"
+  205  git push origin main
+  206  git add -A
+  207  git commit -m "further updates"
+  208  git push origin main
+  209  git add -A
+  210  git commit -m "further updates"
+  211  git push origin main
+  212  git add -A
+  213  git commit -m "updates"
+  214  git push origin main
+  215  git add -A
+  216  git commit -m "updates READ ME file"
+  217  git push origin main
+  218  git add -A
+  219  git commit -m "adding screenshot images"
+  220  git push origin main
+  221  git add -A
+  222  git commit -m " immage updates"
+  223  git push origin main
+  224  git push origin main
+  225  git add -A
+  226  git commit -m "Updated image path"
+  227  git push origin main
+  228  git add -A
+  229  git commit -m "Updated images"
+  230  git push origin main
+  231  git add -A
+  232  git commit -m "Resolving conflict on image files"
+  233  git push origin main
+  234  git add -A
+  235  git commit -m "Updated with screen shots"
+  236  git push origin main
+  237  git add -A
+  238  git commit -m "Update READ ME"
+  239  git push origin main
+  240  history 50 >terminal_history.txt
