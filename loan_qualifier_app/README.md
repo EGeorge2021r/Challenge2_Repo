@@ -46,9 +46,15 @@ pip install fire
 Alternatively, to install Python Fire from source, clone the source and run:
 python setup.py install
 
-pip questionary installation
+pip questionary installation:
+
 Use the package manager pip to install Questionary:
+
 $ pip install questionary
+
+The screen shot below shows the imports and critical dependencies that are used in the stable version of this project:
+
+![Loan Qualifier Prompts](Images/com_line_inter.png)
 
 ---
 
@@ -58,7 +64,7 @@ The easiest way to use Fire is to take any Python program, and then simply call 
 
 Upon launching the loan qualifier, the user will be prompted to answer the following:
 
-  ![Loan Qualifier Prompts](Images/Questionary_for_Applicants_bank_info.png)
+![Loan Qualifier Prompts](Images/Questionary_for_Applicants_bank_info.png)
 
 
 The output from the users response will display as follows
@@ -99,13 +105,17 @@ An sample of questionary usage block code are shown below:
          
     # if the answer by the user is yes, then the user will be promped to enter the file path and csv file to save the result.
         save_csv(qualifying_loans)
-        
+
+A screen shot of the qualified loan sample output saved in csv is shown below:
+
+![Save qualifying loan](Images/Qualifying_loan_output_csv3.png)
+
+
 ---
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
   Camden Kirkland - Lead instrucor Rice University Fintech Bootcamp
   Jonathan Randolph - TA  Rice University Fintech Bootcamp
-  Kenneth Igben - TA  Rice University Fintech Bootcamp
   Caleb MacBride - TA  Rice University Fintech Bootcamp
 My contact email is egeorge2013khs@gamil.com 
 

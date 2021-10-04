@@ -15,13 +15,9 @@ Reason: To demonstrate the new software engineers’ skills in fintech career
 ---
 
 ## Technologies
-The programming language used for this project is Python 3.9. In addition, the following python libraries were imported and used in the coding:
-1. Fire
-2. Questionary
-3. pathlib
-4. csv library 
-frameworks
-Windows 10 operating system used in executing the python coding.  
+The programming language used for this project is Python 3.9. In addition, the following libraries were imported and used in the coding:
+1. Fire, 2. Questionary, 3. pathlib, 4. csv library 
+Windows 10operating system used in executing the python coding.  
 git bash and VS code which has a built in CLI and libraries are used for the project.
 
 This project leverages python 3.9 with the following packages:
@@ -41,65 +37,89 @@ Before running the application first install the following dependencies.
   pip install questionary
 ```
 How To Install Python 3 on Windows 10
-Step 1: Select Version of Python to Install.
-Step 2: Download Python Executable Installer.
-Step 3: Run Executable Installer.
-Step 4: Verify Python Was Installed On Windows.
-Step 5: Verify Pip Was Installed.
-Step 6: Add Python Path to Environment Variables (Optional)
+Step 1: Select Version of Python to Install, Step 2: Download Python Executable Installer, Step 3: Run Executable Installer, Step 4: Verify Python Was Installed On Windows.
+Step 5: Verify Pip Was Installed, Step 6: Add Python Path to Environment Variables (Optional)
 
-pip fire installation
 Python Fire is a library for automatically generating command line interfaces (CLIs) from python object. This can be installed in one of the following ways:
 To install Python Fire from pypi, run:
 pip install fire
 Alternatively, to install Python Fire from source, clone the source and run:
 python setup.py install
 
-pip questionary installation
+pip questionary installation:
+
 Use the package manager pip to install Questionary:
+
 $ pip install questionary
+
+The screen shot below shows the imports and critical dependencies that are used in the stable version of this project:
+
+![Loan Qualifier Prompts](Images/com_line_inter.png)
 
 ---
 
 ## Usage
-An sample screenshot of the usage and the block code are shown below:
-The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. An sample block code of fire usage is shown below:
+An sample block codes are shown below:
+The easiest way to use Fire is to take any Python program, and then simply call fire.Fire() at the end of the program. This will expose the full contents of the program to the command line. 
 
-import fire
+Upon launching the loan qualifier, the user will be prompted to answer the following:
 
-def hello(name):
-  return 'Hello {name}!'.format(name=name)
-
-if __name__ == '__main__':
-  fire.Fire()
-
-An sample screenshot of questionary usage and the block code are shown below:
-
-Screenshots:
-![](images/questionary_screenshot.png)
+![Loan Qualifier Prompts](Images/Questionary_for_Applicants_bank_info.png)
 
 
-Code blocks:
-import questionary
+The output from the users response will display as follows
 
- ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
-    # user to write in the file path
-ans_savefile = questionary.confirm("Do you want to save this file?").ask()
+![Loan Qualifier Prompts](Images/git_terminal_user_dialog.png)
+
+
+An sample block code of fire usage is shown below:
+
+      def run():
+      """The main function for running the script."""
+      # Load the latest Bank data
+          bank_data = load_bank_data()
+
+      # Get the applicant's information
+          credit_score, debt, income, loan_amount, home_value = get_applicant_info()
+
+      # Find qualifying loans
+          qualifying_loans = find_qualifying_loans(bank_data, credit_score, debt, income, loan_amount, home_value)
+
+      # Save qualifying loans
+          save_qualifying_loans(qualifying_loans)
+
+      if __name__ == "__main__":
+        fire.Fire(run)
+
+An sample of questionary usage block code are shown below:
+
+    import questionary
+
+    def save_qualifying_loans(qualifying_loans):
+    
+    # using questionary, the user is asked to enter the file path where the file will be saved.
+        ans_path = questionary.path("What file path do you want to save qualifying loans?").ask()
+
+        ans_savefile = questionary.confirm("Do you want to save this file?").ask()
     if ans_savefile == True: 
-        save_csv(qualifying_loans) 
+         
+    # if the answer by the user is yes, then the user will be promped to enter the file path and csv file to save the result.
+        save_csv(qualifying_loans)
+
+A screen shot of the qualified loan sample output saved in csv is shown below:
+
+![Save qualifying loan](Images/Qualifying_loan_output_csv3.png)
+
 
 ---
-
 ## Contributors
 I wish to acknowledge the following contributors to the success of this project:
   Camden Kirkland - Lead instrucor Rice University Fintech Bootcamp
   Jonathan Randolph - TA  Rice University Fintech Bootcamp
-  Kenneth Igben - TA  Rice University Fintech Bootcamp
   Caleb MacBride - TA  Rice University Fintech Bootcamp
 My contact email is egeorge2013khs@gamil.com 
 
 My LinkedIn profile: www.linkedin.com/in/emmanuel-george-mba-pmp-pcqi
-
 
 References:
 https://github.com/google/python-fire
