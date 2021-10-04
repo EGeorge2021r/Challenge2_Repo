@@ -1,50 +1,50 @@
-  114  ~
-  115  pwd
-  116  cd one
-  117  exit
-  118  cd OneDrive
-  119  cd Desktop
-  120  cd Fintech/
-  121  cd Challenge2_Repo/
-  122  code .
-  123  python loan_qualifier_app/
-  124  ls
-  125  cd loan_qualifier_app/
-  126  ls
-  127  python app.py 
-  128  git push origin main
-  129  git status
-  130  git add -a
-  131  git add .
-  132  git add -A
-  133  git commit -m "file update Oct 2"
-  134  git push
-  135  git push origin main
-  136  git add -A
-  137  git commit -m "further updates made in Read me file"
-  138  git push origin main
-  139  git add -A
-  140  git commit -m "additional update of immage files format"
-  141  git push origin main
-  142  git add -A
-  143  git commit -m "further editing of image file"
-  144  git push origin main
-  145  git pull origin main
-  146  git pull origin main
-  147  git status
-  148  git commit -a "conflict fixed"
-  149  git commit -m "conflict resolved"
-  150  git add -A
-  151  git commit -m "conflict resolved"
-  152  git push
-  153  git push origin main
-  154  git pull origin main
-  155  git pull origin main
-  156  git status
-  157  git add -A
-  158  git commit -m "conflict resolution"
-  159  git pull origin main
-  160  cd .
-  161  cd ..
-  162  history 50 > terminal_history.txt
-  163  history 50 > terminal_history.txt
+  204  git commit -m " update made on READ ME file"
+  205  git push origin main
+  206  git add -A
+  207  git commit -m "further updates"
+  208  git push origin main
+  209  git add -A
+  210  git commit -m "further updates"
+  211  git push origin main
+  212  git add -A
+  213  git commit -m "updates"
+  214  git push origin main
+  215  git add -A
+  216  git commit -m "updates READ ME file"
+  217  git push origin main
+  218  git add -A
+  219  git commit -m "adding screenshot images"
+  220  git push origin main
+  221  git add -A
+  222  git commit -m " immage updates"
+  223  git push origin main
+  224  git push origin main
+  225  git add -A
+  226  git commit -m "Updated image path"
+  227  git push origin main
+  228  git add -A
+  229  git commit -m "Updated images"
+  230  git push origin main
+  231  git add -A
+  232  git commit -m "Resolving conflict on image files"
+  233  git push origin main
+  234  git add -A
+  235  git commit -m "Updated with screen shots"
+  236  git push origin main
+  237  git add -A
+  238  git commit -m "Update READ ME"
+  239  git push origin main
+  240  history 50 >terminal_history.txt
+  241  git add -A
+  242  git commit -m "Updated comments in app.py file"
+  243  git push origin main
+  244  ls
+  245  python app.py
+  246  git add -A
+  247  git commit -m " Continued update"
+  248  git push origin main
+  249  history 50 >terminal_history.txt
+  250  history 50 >terminal_history.txt
+  251  ls
+  252  python terminal_history.txt 
+  253  history 50 >terminal_history.txt

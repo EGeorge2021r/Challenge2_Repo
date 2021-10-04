@@ -1,16 +1,3 @@
-  191  git status
-  192  git push origin main
-  193  git add -A
-  194  git commit -m "READ ME updates"
-  195  git push origin main
-  196  history 50 >terminal_history.txt
-  197  git add -A
-  198  git commit -m "More READ ME update"
-  199  git push origin main
-  200  git add -A
-  201  git commit -m "More READ ME update"
-  202  git push origin main
-  203  git add -A
   204  git commit -m " update made on READ ME file"
   205  git push origin main
   206  git add -A
@@ -48,3 +35,16 @@
   238  git commit -m "Update READ ME"
   239  git push origin main
   240  history 50 >terminal_history.txt
+  241  git add -A
+  242  git commit -m "Updated comments in app.py file"
+  243  git push origin main
+  244  ls
+  245  python app.py
+  246  git add -A
+  247  git commit -m " Continued update"
+  248  git push origin main
+  249  history 50 >terminal_history.txt
+  250  history 50 >terminal_history.txt
+  251  ls
+  252  python terminal_history.txt 
+  253  history 50 >terminal_history.txt
