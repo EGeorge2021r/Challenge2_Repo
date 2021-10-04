@@ -1,7 +1,3 @@
-  210  git commit -m "further updates"
-  211  git push origin main
-  212  git add -A
-  213  git commit -m "updates"
   214  git push origin main
   215  git add -A
   216  git commit -m "updates READ ME file"
@@ -48,3 +44,7 @@
   257  git commit -m "update with latest loan data"
   258  git push origin main
   259  history 50 >terminal_history.txt
+  260  git add -A
+  261  git commit -m " Routine file updates"
+  262  git push origin main
+  263  history 50 >terminal_history.txt
