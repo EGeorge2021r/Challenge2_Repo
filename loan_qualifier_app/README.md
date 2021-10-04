@@ -58,22 +58,12 @@ The easiest way to use Fire is to take any Python program, and then simply call 
 
 Upon launching the loan qualifier, the user will be prompted to answer the following:
 
-  ![Loan Qualifier Prompts](C:\Users\egeor\OneDrive\Desktop\Fintech\Challenge2_Repo\loan_qualifier_app\Images\Questionary_for_Applicants_bank_info.png)
-
-
-
-
+  ![Loan Qualifier Prompts](Images\git_terminal_user_dialog.png)
 
 
 The output from the users response will display as follows
 
-![Loan Qualifier Prompts](C:\Users\egeor\OneDrive\Desktop\Fintech\Challenge2_Repo\loan_qualifier_app\Images\git_terminal_user_dialog.png)
-
-
-
-
-
-
+![Loan Qualifier Prompts](Images\git_terminal_user_dialog.png)
 
 
 An sample block code of fire usage is shown below:
