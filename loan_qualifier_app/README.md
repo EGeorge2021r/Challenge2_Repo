@@ -67,7 +67,7 @@ Upon launching the loan qualifier, the user will be prompted to answer the follo
 ![Loan Qualifier Prompts](Images/Questionary_for_Applicants_bank_info.png)
 
 
-The output from the users response will display as follows
+The git terminal will display the dialog with the applicant will as follows:
 
 ![Loan Qualifier Prompts](Images/git_terminal_user_dialog.png)
 
