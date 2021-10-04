@@ -58,7 +58,7 @@ The easiest way to use Fire is to take any Python program, and then simply call 
 
 Upon launching the loan qualifier, the user will be prompted to answer the following:
 
-  ![Loan Qualifier Prompts](Images\git_terminal_user_dialog.png)
+  ![Loan Qualifier Prompts](Images\Questionary_for_Applicants_bank_info.png)
 
 
 The output from the users response will display as follows
